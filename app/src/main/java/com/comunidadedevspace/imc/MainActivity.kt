@@ -1,10 +1,13 @@
 package com.comunidadedevspace.imc
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,13 +36,17 @@ class MainActivity : AppCompatActivity() {
                 val altura2 = altura * altura
                 val result = peso / altura2
 
-                println("resumo" + result)
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, result)
+                startActivity(intent)
+
             }
 
 
         }
 
     }
-
 }
+
+
     

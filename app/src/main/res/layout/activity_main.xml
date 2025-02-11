@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
@@ -31,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite aqui seu peso"
+            android:maxLength="5"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite aqui a sua altura"
+            android:maxLength="5"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
